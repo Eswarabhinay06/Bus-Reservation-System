@@ -1,0 +1,90 @@
+.custom-navbar{
+    background: linear-gradient(90deg,#0d6efd,#6610f2);
+    padding: 15px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,.15);
+}
+
+/* Logo */
+
+.navbar-brand{
+    color: white !important;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.navbar-brand span{
+    margin-left: 5px;
+}
+
+/* Navigation Links */
+
+.nav-link{
+    color: white !important;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px 20px !important;
+    margin-left: 8px;
+    border-radius: 12px;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    background: rgba(255,255,255,.15);
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+/* Active Page */
+
+.active-link{
+    background: white;
+    color: #0d6efd !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
+}
+
+/* Welcome Text */
+
+.welcome-text{
+    color: #ffd43b;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+/* Logout Button */
+
+.logout-btn{
+    border-radius: 12px;
+    padding: 10px 22px;
+    margin-left: 15px;
+}
+
+/* Mobile */
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+@media(max-width:992px){
+
+    .nav-link{
+        margin:8px 0;
+    }
+
+    .welcome-text{
+        display:block;
+        margin:12px 0;
+    }
+
+    .logout-btn{
+        width:100%;
+        margin-top:12px;
+        margin-left:0;
+    }
+
+}

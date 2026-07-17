@@ -1,0 +1,29 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f7fc;
+}
+
+.card{
+    border:none;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.btn{
+    border-radius:8px;
+}
+
+h1,h2,h3{
+    font-weight:bold;
+}
+
+footer{
+    margin-top:60px;
+}

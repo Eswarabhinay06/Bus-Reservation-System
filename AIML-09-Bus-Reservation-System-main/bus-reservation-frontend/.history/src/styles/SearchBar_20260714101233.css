@@ -1,0 +1,17 @@
+.search-box{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    margin-top:-60px;
+    position:relative;
+    z-index:100;
+}
+
+.search-box input{
+    height:50px;
+}
+
+.search-box button{
+    height:50px;
+}

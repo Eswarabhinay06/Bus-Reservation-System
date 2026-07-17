@@ -1,0 +1,22 @@
+body {
+  background-color: #165ae0;
+}
+
+.card {
+  transition: 0.3s;
+  border-radius: 15px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.btn {
+  border-radius: 10px;
+}

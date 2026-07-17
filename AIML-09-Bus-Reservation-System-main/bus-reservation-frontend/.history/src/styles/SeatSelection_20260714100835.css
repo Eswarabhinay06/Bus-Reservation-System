@@ -1,0 +1,73 @@
+function BusCard({ bus, onBook }) {
+  return (
+    <div className="col-lg-6 col-xl-4 mb-4">
+      <div
+        className="card shadow border-0 rounded-4 h-100"
+        style={{
+          transition: "0.3s",
+          cursor: "pointer",
+        }}
+      >
+        <div className="card-body">
+
+          <h3 className="text-primary fw-bold">
+            🚌 {bus.busName}
+          </h3>
+
+          <hr />
+
+          <p>
+            <strong>Bus No:</strong> {bus.busNumber}
+          </p>
+
+          <p>
+            <strong>From:</strong> {bus.source}
+          </p>
+
+          <p>
+            <strong>To:</strong> {bus.destination}
+          </p>
+
+          <div className="d-flex justify-content-between">
+
+            <div>
+              <small className="text-muted">Departure</small>
+              <h6>{bus.departureTime}</h6>
+            </div>
+
+            <div>
+              <small className="text-muted">Arrival</small>
+              <h6>{bus.arrivalTime}</h6>
+            </div>
+
+          </div>
+
+          <hr />
+
+          <h4 className="text-success">
+            ₹ {bus.fare}
+          </h4>
+
+          <p className="fw-bold">
+            Seats Left :
+            <span className="text-danger">
+              {" "}
+              {bus.availableSeats}
+            </span>
+          </p>
+
+          <button
+            className="btn btn-primary w-100"
+            disabled={bus.availableSeats <= 0}
+            onClick={() => onBook(bus)}
+          >
+            {bus.availableSeats > 0 ? "Book Ticket" : "Sold Out"}
+          </button>
+
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default BusCard;
