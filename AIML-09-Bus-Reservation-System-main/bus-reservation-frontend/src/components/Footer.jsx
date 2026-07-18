@@ -34,7 +34,7 @@ function Footer() {
           <div className="col-md-4 mb-4">
             <h4>Contact</h4>
 
-            <p>📧 indranil@gmail.com</p>
+            <p>📧 Eswar@gmail.com</p>
             <p>📞 +91 9876543210</p>
             <p>📍 Hyderabad, India</p>
           </div>
@@ -44,7 +44,7 @@ function Footer() {
         <hr />
 
         <div className="text-center">
-          © 2026 Bus Reservation System | Developed by <b>Indranil</b>
+          © 2026 Bus Reservation System | Developed by <b> Eswar </b>
         </div>
 
       </div>
